@@ -1,7 +1,7 @@
 {
   "name": "react-statements",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2",
+  "description": "一个很小的React语句控制组件，可能是更漂亮的语句控制方法↔️",
   "author": "https://github.com/monsterooo",
   "license": "MIT",
   "repository": "https://github.com/monsterooo/react-statements",

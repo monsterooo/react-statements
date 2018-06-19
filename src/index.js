@@ -1,26 +1,13 @@
-/**
- * @class ExampleComponent
- */
+import If from './If';
+import Switch from './Switch';
+import Case from './Case';
+import Default from './Default';
+import For from './For';
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export {
+  If,
+  Switch,
+  Case,
+  Default,
+  For,
+};
