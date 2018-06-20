@@ -1,4 +1,4 @@
-# react-statements
+# react-statements &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/monsterooo/react-statements/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react-statements.svg?style=flat)](https://www.npmjs.com/package/react-statements)
 
 react-statements是一个很小的React语句控制组件，更漂亮的条件渲染方法↔️
 
@@ -10,6 +10,8 @@ yarn add react-statements
 ```
 
 ## 栗子
+
+[![Edit react-statements-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/04rjj3xvnn)
 
 ```jsx
 import { If } from 'react-statements'
