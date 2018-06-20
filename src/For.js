@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Default from './Default';
 
 function isObject(val) {
@@ -38,4 +39,10 @@ class For extends React.Component {
     return null;
   }
 }
+For.propTypes = {
+  of: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+};
 export default For;
