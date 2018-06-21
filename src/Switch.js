@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Case from './Case';
 import Default from './Default';
 
@@ -19,5 +20,7 @@ const Switch = ({ value, children }) => {
   }
   return null;
 };
-
+Switch.propTypes = {
+  value: PropTypes.any.isRequired
+};
 export default Switch;

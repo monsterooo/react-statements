@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const If = ({ when, children }) => {
   if (when) {
@@ -6,5 +6,7 @@ const If = ({ when, children }) => {
   }
   return null;
 };
-
+If.propTypes = {
+  when: PropTypes.any.isRequired
+};
 export default If;
