@@ -83,6 +83,10 @@ class Example extends React.Component {
 </For>
 ```
 
+## 未来
+
+正在计划扩展这个库，如果有兴趣和任何想法欢迎提issues或email: createthink.net@gmail.com
+
 ## 问题
 
 如果在使用过程中有任何问题或建议可以在issues提出
