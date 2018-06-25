@@ -2,6 +2,8 @@
 
 react-statements是一个很小的React语句控制组件，更漂亮的条件渲染方法↔️
 
+[起源一些工作中的思考](https://juejin.im/post/5b2b99d2e51d455892718a40)
+
 ## 安装
 
 ```shell
