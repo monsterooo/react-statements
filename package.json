@@ -1,6 +1,6 @@
 {
   "name": "react-statements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个很小的React语句控制组件，更漂亮的条件渲染方法↔️",
   "author": "https://github.com/monsterooo",
   "license": "MIT",

@@ -68,6 +68,48 @@ class Example extends React.Component {
 </Switch>
 ```
 
+### Range
+
+`Range`组件可以对范围进行判断然后渲染组件
+
+`Range`可以使用`type`属性对范围进行`in``notint`的判断
+
+`Range`组件的`value`可以接收一个`Array`或`Object`来作范围的判断
+
+`Range`组件的`when`可以指定范围的值，如果`value`是数组直接指定值，如果`value`是一个对象可以指定对象的键或对象的值
+
+`Range`组件的`whenKey`是当`value`为对象是，用来指定`when`是判断的`value`的键而非值
+
+```jsx
+<Range type="in" value={[1,2,3]} when={1}>
+  <p>在数组范围之中</p>
+</Range>
+<Range type="in" value={[1,2,3]} when={4}>
+  <p>这个组件不会显示，when值不在value之中</p>
+</Range>
+<Range type="in" value={{ a: 'test1', b: 'test2' }} when="test2">
+  <p>value对象的值包含when的值</p>
+</Range>
+{ /* whenKey用来指定判断的是value的键 */ }
+<Range type="in" value={{ a: 'test1', b: 'test2' }} when='b' whenKey>
+  <div>
+    <p>可以判断对象的key值是在when中</p>
+  </div>
+</Range>
+<Range type="notin" value={[1,2,3]} when={4}>
+  <p>不在数组范围之中</p>
+</Range>
+<Range type="notin" value={{ a: 'test1', b: 'test2' }} when="test3">
+  <p>value对象的值不包含when的值</p>
+</Range>
+{ /* whenKey用来指定判断的是value的键 */ }
+<Range type="notin" value={{ a: 'test1', b: 'test2' }} when='c' whenKey>
+  <div>
+    <p>可以判断对象的key值不是在when中</p>
+  </div>
+</Range>
+```
+
 ### For
 
 `For`组件可以对`Array`、`Object`遍历生成一组组件
