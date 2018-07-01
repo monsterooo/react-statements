@@ -2,6 +2,8 @@
 
 react-statements是一个很小的React语句控制组件，更漂亮的条件渲染方法↔️
 
+[起源一些工作中的思考](https://juejin.im/post/5b2b99d2e51d455892718a40)
+
 ## 安装
 
 ```shell
@@ -122,6 +124,10 @@ class Example extends React.Component {
   <Default>默认组件</Default>
 </For>
 ```
+
+## 未来
+
+正在计划扩展这个库，如果有兴趣和任何想法欢迎提issues或email: createthink.net@gmail.com
 
 ## 问题
 
