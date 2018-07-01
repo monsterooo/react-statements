@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Default from './Default';
-
-function isObject(val) {
-  return val != null && typeof val === 'object' && Array.isArray(val) === false;
-};
+import { isObject } from './utils';
 
 class For extends React.Component {
   render() {

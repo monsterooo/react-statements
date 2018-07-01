@@ -3,6 +3,7 @@ import Switch from './Switch';
 import Case from './Case';
 import Default from './Default';
 import For from './For';
+import Range from './Range';
 
 export {
   If,
@@ -10,4 +11,5 @@ export {
   Case,
   Default,
   For,
+  Range,
 };
