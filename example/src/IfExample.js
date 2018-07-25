@@ -1,5 +1,5 @@
 import React from 'react';
-import { If } from 'react-statements'
+import { If, Default } from 'react-statements'
 
 class IfExample extends React.Component {
   constructor(props) {
@@ -32,6 +32,10 @@ class IfExample extends React.Component {
           <If when={isNum} children={<p>我也可以通过number类型判断，大于1显示内容</p>} />
           <If when={isNumZero} children={<p>我也可以通过number类型判断, 小于1隐藏内容</p>} />
         </div>
+        <If when={false}>
+          <p>↔️我是一些组件内容</p>
+          <Default>默认If组件</Default>
+        </If>
       </fieldset>
     </div>
     );

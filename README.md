@@ -49,6 +49,15 @@ class Example extends React.Component {
 <If when={condition} children={<p>使用方法同上，单标签方法中使用</p>} />
 ```
 
+`If`组件内部可以使用`Default`组件, 在`when`条件为false的时候渲染.
+
+```
+<If when={false}>
+  <p>↔️我是一些组件内容</p>
+  <Default>when条件为false渲染的组件</Default>
+</If>
+```
+
 ### Switch 组件
 
 `Switch`组件可以根据指定的值渲染不同的组件
